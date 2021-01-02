@@ -1,0 +1,14 @@
+.empty{
+  height:2vh;
+}
+.bt1{
+  
+  height: 10vh;
+  display:flex;
+  justify-content: space-around;
+}
+.wenzi{
+
+  display:flex;
+  color: rgb(80, 60, 40);
+}

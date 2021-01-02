@@ -1,0 +1,35 @@
+<!--logs.wxml-->
+ <view class="empty">
+  </view>
+<view class="itemView">出发地：
+    <input class="input" name="userName" placeholder="请输入出发地"
+    bindinput ="input_startplace"/>
+  </view>
+   <view class="empty">
+  </view>
+   <view class="empty">
+  </view>
+<view class="itemView">目的地：
+    <input class="input"  placeholder="请输入目的地"
+     bindinput="input_endplace" />
+  </view>
+   <view class="empty">
+  </view>
+
+<view class="bt1">
+  <button bindtap="start" style="float:left" style="width:48vw"  > 召唤小车</button>
+  <button bindtap="goToEndplace" style="float:right" style="width:48vw"> 出发</button>
+  </view>
+<view>
+      <view class="empty">
+  </view>
+<text class="wenzi">实时状态</text>
+</view>
+<view>
+
+<text wx:if="{{judge=='0'}}" class='wenzi'>{{message0}}</text>
+<text wx:if="{{judge=='1'}}" class='wenzi'>{{message1}}</text>
+<text wx:if="{{judge=='2'}}" class='wenzi'>{{message2}}</text>
+<text wx:if="{{judge=='3'}}" class='wenzi'>{{message3}}</text>
+<text wx:if="{{judge=='4'}}" class='wenzi'>{{message4}}</text>
+</view>
